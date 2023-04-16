@@ -1,10 +1,10 @@
-import time
 import argparse
 
 from environs import Env
 from selenium import webdriver
-from actions import Actions
 from selenium.webdriver.common.by import By
+
+from actions import Actions
 
 # parser of profile link from command line
 ap = argparse.ArgumentParser()
@@ -12,9 +12,7 @@ ap.add_argument("-l", "--link", required=True,
                 help="link to LinkedIn profile ex:https://www.linkedin.com/in/aleksandr-churakov/")
 args = vars(ap.parse_args())
 
-
 main_page = "https://linkedin.com"
-link = "https://www.linkedin.com/in/ekaterina-kuznetsova-33b73b269"
 browser = webdriver.Chrome()
 env = Env()
 env.read_env(".env")

@@ -37,7 +37,3 @@ class Actions():
                 endorsed_skills += 0.5
         finally:
             print(f"{int(endorsed_skills)}/{skills_to_endorse} skills is endorsed")
-
-
-
-

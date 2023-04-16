@@ -6,7 +6,7 @@ from actions import Actions
 from selenium.webdriver.common.by import By
 
 main_page = "https://linkedin.com"
-link = "https://www.linkedin.com/in/aleksandr-churakov/"
+link = "https://www.linkedin.com/in/ekaterina-kuznetsova-33b73b269"
 browser = webdriver.Chrome()
 env = Env()
 env.read_env(".env")
@@ -23,9 +23,8 @@ try:
     browser.get(f"{link.rstrip('/')}/details/skills/")
     actions = Actions(browser)
     actions.scroll_down()
-    time.sleep(10)
+    actions.endorse_skills()
 except Exception as ex:
     print(ex)
 finally:
     browser.quit()
-

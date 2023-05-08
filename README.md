@@ -53,7 +53,7 @@ Another way to implement this functionality is to use the built-in Selenium Acti
 
 <h3>Concerns</h3>
 
-- Any limitations of endorsment in a day?
+- Any limitations of endorsments in a day?
 - Can you get banned for this?
 
 ----
@@ -61,4 +61,5 @@ Another way to implement this functionality is to use the built-in Selenium Acti
 <h3>To do:</h3>
 
 - ~~Add parsing of link user is provided as a parameter. python endorse --link=xxxx~~
+- Two-factor authentication
 - Resolve all problems
